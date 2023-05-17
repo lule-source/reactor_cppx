@@ -14,6 +14,7 @@
 #include <sys/epoll.h>
 #include <chrono>
 #include <cassert>
+#include "tcptool.hpp"
 
 class TcpTool;
 #define MAXEVENTS 1024
