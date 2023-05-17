@@ -56,8 +56,7 @@ void Epoll::handleEvents(int listenFd, int eventsNum)
     for (int i = 0; i < eventsNum; ++i)
     {
         TcpTool *tcptool = (TcpTool *)(_events[i].data.ptr);
-        // int fd = tcptool->getFd();
-        int fd = listenFd;
+        int fd = tcptool->getFd();
         if (fd == listenFd)
         {
             _connnectioncb;

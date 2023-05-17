@@ -16,7 +16,6 @@
 #include <cassert>
 #include "tcptool.hpp"
 
-class TcpTool;
 #define MAXEVENTS 1024
 
 class Epoll
